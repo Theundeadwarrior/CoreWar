@@ -88,7 +88,7 @@ TEST_CASE(Parser_AssemblyFile)
 {
 	eastl::vector<Engine::Instruction> parsedInstruction;
 
-	FakeParser parser("start DAT.X #  0,$  1 ; test \n test MOV.AB 0,start ; blabla \n");
+	FakeParser parser("start DAT.X #  0%4,$  1 ; test \n test MOV.AB 0,start ; blabla \n");
 	parser.AssemblyFile();
 	parser.GetResolvedInstructions(parsedInstruction);
 

@@ -122,8 +122,10 @@ namespace Engine
 		MARS();
 		void Step();
 
+
 	protected:
 		void ExecuteInstruction(RuntimeWarrior* w, int offset);
+		void LoadInstructionList(const eastl::vector<Instruction>& instructions, int offset);
 
 	private:
 		Core m_Core;

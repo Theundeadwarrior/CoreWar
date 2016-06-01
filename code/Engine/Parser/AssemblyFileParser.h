@@ -97,7 +97,8 @@ namespace Engine
 		eastl::string m_Labels;
 		EOpCode m_OpCode;
 		EModifier m_Modifier;
-		eastl::vector<Token> m_Expr;
+		EMode m_Mode1, m_Mode2;
+		eastl::string m_Expr1, m_Expr2;
 	};
 
 	class RedCodeParser
@@ -139,6 +140,7 @@ namespace Engine
 	private:
 		bool IsParsingDone();
 		int GetLabelValueFromString(const eastl::string & str);
+		int RedCodeParser::EvaluateExpression(const eastl::string& expr);
 
 	private:
 		eastl::vector<AssemblyFileInstruction> m_AssemblyInstructions;

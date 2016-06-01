@@ -39,6 +39,14 @@ namespace Engine
 
 	}
 
+	void MARS::LoadInstructionList(const eastl::vector<Instruction>& instructions, int offset)
+	{
+		for (auto ins : instructions)
+		{
+			m_Core.SetInstruction(ins, offset);
+		}
+	}
+
 	void MARS::Step()
 	{
 		for (auto* w : m_Warriors)
