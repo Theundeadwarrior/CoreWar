@@ -1,0 +1,361 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="NewFilter1">
+      <UniqueIdentifier>{1e8731c1-067f-49d6-8f2e-dbc069657072}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System">
+      <UniqueIdentifier>{177061e5-272c-489b-af90-aa656592c7e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Parser">
+      <UniqueIdentifier>{818385de-625e-42b4-b001-fbd324d75f28}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RedCodeEngine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="System\allocator_eastl.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="System\assert.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="System\fixed_pool.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="System\hashtable.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="System\numeric_limits.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="System\red_black_tree.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="System\string.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="System\thread_support.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="System\intrusive_list.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="Parser\Lexer.cpp">
+      <Filter>Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="Parser\AssemblyFileParser.cpp">
+      <Filter>Parser</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="RedCodeEngine.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\deque.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\fixed_allocator.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\fixed_hash_map.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\fixed_hash_set.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\fixed_list.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\fixed_map.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\fixed_set.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\fixed_slist.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\fixed_string.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\fixed_substring.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\fixed_vector.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\functional.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\hash_map.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\hash_set.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\heap.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\initializer_list.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\intrusive_hash_map.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\intrusive_hash_set.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\intrusive_list.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\intrusive_ptr.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\iterator.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\linked_array.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\linked_ptr.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\list.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\map.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\memory.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\numeric.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\numeric_limits.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\priority_queue.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\queue.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\random.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\ratio.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\safe_ptr.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\scoped_array.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\scoped_ptr.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\set.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\shared_array.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\shared_ptr.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\slist.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\sort.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\stack.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\string.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\tuple.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\type_traits.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\unique_ptr.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\utility.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\vector.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\vector_map.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\vector_multimap.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\vector_multiset.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\vector_set.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\version.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\weak_ptr.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\bonus\call_traits.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\bonus\compressed_pair.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\bonus\fixed_string_abstract.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\bonus\intrusive_sdlist.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\bonus\intrusive_slist.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\bonus\list_map.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\bonus\ring_buffer.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\bonus\sort_extra.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\bonus\sparse_matrix.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\bonus\string_abstract.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\internal\allocator_traits.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\internal\allocator_traits_fwd_decls.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\internal\config.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\internal\copy_help.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\internal\enable_shared.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\internal\fill_help.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\internal\fixed_pool.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\internal\function.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\internal\functional_base.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\internal\generic_iterator.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\internal\hashtable.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\internal\integer_sequence.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\internal\intrusive_hashtable.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\internal\mem_fn.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\internal\move_help.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\internal\pair_fwd_decls.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\internal\red_black_tree.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\internal\smart_ptr.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\internal\thread_support.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\internal\tuple_fwd_decls.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\internal\type_compound.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\internal\type_fundamental.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\internal\type_pod.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\internal\type_properties.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\internal\type_transformations.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\algorithm.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\allocator.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\allocator_malloc.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\array.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\bitset.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\bitvector.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\chrono.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\core_allocator.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extern\EASTL\include\EASTL\core_allocator_adapter.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="Parser\Lexer.h">
+      <Filter>Parser</Filter>
+    </ClInclude>
+    <ClInclude Include="Parser\AssemblyFileParser.h">
+      <Filter>Parser</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,14 @@
+C:\Users\Luc\Desktop\Programming\Projects\CodeWar\CodeWar\bin\Debug\CodeWar.exe.config
+C:\Users\Luc\Desktop\Programming\Projects\CodeWar\CodeWar\bin\Debug\CodeWar.exe
+C:\Users\Luc\Desktop\Programming\Projects\CodeWar\CodeWar\bin\Debug\CodeWar.pdb
+C:\Users\Luc\Desktop\Programming\Projects\CodeWar\CodeWar\obj\Debug\CodeWar.csprojResolveAssemblyReference.cache
+C:\Users\Luc\Desktop\Programming\Projects\CodeWar\CodeWar\obj\Debug\MainWindow.g.cs
+C:\Users\Luc\Desktop\Programming\Projects\CodeWar\CodeWar\obj\Debug\App.g.cs
+C:\Users\Luc\Desktop\Programming\Projects\CodeWar\CodeWar\obj\Debug\CodeWar_MarkupCompile.cache
+C:\Users\Luc\Desktop\Programming\Projects\CodeWar\CodeWar\obj\Debug\CodeWar_MarkupCompile.lref
+C:\Users\Luc\Desktop\Programming\Projects\CodeWar\CodeWar\obj\Debug\MainWindow.baml
+C:\Users\Luc\Desktop\Programming\Projects\CodeWar\CodeWar\obj\Debug\CodeWar.g.resources
+C:\Users\Luc\Desktop\Programming\Projects\CodeWar\CodeWar\obj\Debug\CodeWar.Properties.Resources.resources
+C:\Users\Luc\Desktop\Programming\Projects\CodeWar\CodeWar\obj\Debug\CodeWar.csproj.GenerateResource.Cache
+C:\Users\Luc\Desktop\Programming\Projects\CodeWar\CodeWar\obj\Debug\CodeWar.exe
+C:\Users\Luc\Desktop\Programming\Projects\CodeWar\CodeWar\obj\Debug\CodeWar.pdb

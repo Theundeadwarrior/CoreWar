@@ -1,0 +1,41 @@
+﻿<Window x:Class="CodeWar.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CodeWar"
+        xmlns:wpg="namespace:System.Windows.Controls" 
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <!--<Grid>-->
+    <DockPanel >
+        <Menu Name="TopMenu" DockPanel.Dock="Top">
+            <MenuItem Header="File">
+                <MenuItem Header="New" InputGestureText="Ctrl+N"></MenuItem>
+                <MenuItem Header="Open" InputGestureText="Ctrl+O"></MenuItem>
+                <Separator/>
+                <MenuItem Header="Exit" InputGestureText="Alt+F4" Name="MenuFileExit"></MenuItem>
+            </MenuItem>
+            <MenuItem Header="Edit">
+                <MenuItem Header="Undo" InputGestureText="Ctrl+Z"></MenuItem>
+                <MenuItem Header="Redo" InputGestureText="Ctrl+Y"></MenuItem>
+                <Separator/>
+                <MenuItem Header="Cut" InputGestureText="Ctrl+X"></MenuItem>
+                <MenuItem Header="Copy" InputGestureText="Ctrl+C"></MenuItem>
+                <MenuItem Header="Paste" InputGestureText="Ctrl+V"></MenuItem>
+            </MenuItem>
+            <MenuItem Header="View"></MenuItem>
+        </Menu>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="100"/>
+            </Grid.ColumnDefinitions>
+            <TextBox Grid.Column="0" AcceptsReturn="True" SpellCheck.IsEnabled="True" FontFamily="Consolas" />
+            <DataGrid Grid.Column="1" Grid.RowSpan="2">
+            </DataGrid>
+        </Grid>
+    </DockPanel>
+       
+    <!--</Grid>-->
+</Window>

@@ -1,0 +1,3 @@
+﻿Logger.obj : error LNK2019: unresolved external symbol "void __cdecl eastl::AssertionFailure(char const *)" (?AssertionFailure@eastl@@YAXPBD@Z) referenced in function "void * __cdecl eastl::allocate_memory<class eastl::allocator>(class eastl::allocator &,unsigned int,unsigned int,unsigned int)" (??$allocate_memory@Vallocator@eastl@@@eastl@@YAPAXAAVallocator@0@III@Z)
+Logger.obj : error LNK2001: unresolved external symbol "union eastl::EmptyString eastl::gEmptyString" (?gEmptyString@eastl@@3TEmptyString@1@A)
+C:\Users\Luc\Desktop\Programming\Projects\CodeWar\output\Debug\Core.exe : fatal error LNK1120: 2 unresolved externals

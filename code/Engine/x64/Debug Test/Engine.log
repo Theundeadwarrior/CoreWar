@@ -1,0 +1,26 @@
+﻿  AssemblyFileParser.cpp
+c:\users\luc\desktop\programming\projects\codewar\code\engine\parser\assemblyfileparser.cpp(143): error C2039: 'm_type': is not a member of 'Engine::Token'
+  c:\users\luc\desktop\programming\projects\codewar\code\engine\parser\lexer.h(7): note: see declaration of 'Engine::Token'
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\algorithm(1298): note: see reference to function template instantiation 'bool Engine::RedCodeParser::ResolveAssemblyInstructions::<lambda_7dcbc28ae8fa7e6f62cb30de1c344a5e>::operator ()<T>(T) const' being compiled
+          with
+          [
+              T=Engine::Token
+          ]
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\algorithm(1309): note: see reference to function template instantiation 'void std::_Replace_if<_Iter,_Pr,_Ty>(_FwdIt,_FwdIt,_Pr,const _Ty &)' being compiled
+          with
+          [
+              _Iter=Engine::Token *,
+              _Pr=Engine::RedCodeParser::ResolveAssemblyInstructions::<lambda_7dcbc28ae8fa7e6f62cb30de1c344a5e>,
+              _Ty=Engine::Token,
+              _FwdIt=Engine::Token *
+          ]
+  c:\users\luc\desktop\programming\projects\codewar\code\engine\parser\assemblyfileparser.cpp(145): note: see reference to function template instantiation 'void std::replace_if<Engine::Token*,Engine::RedCodeParser::ResolveAssemblyInstructions::<lambda_7dcbc28ae8fa7e6f62cb30de1c344a5e>,Engine::Token>(_FwdIt,_FwdIt,_Pr,const _Ty &)' being compiled
+          with
+          [
+              _FwdIt=Engine::Token *,
+              _Pr=Engine::RedCodeParser::ResolveAssemblyInstructions::<lambda_7dcbc28ae8fa7e6f62cb30de1c344a5e>,
+              _Ty=Engine::Token
+          ]
+c:\users\luc\desktop\programming\projects\codewar\code\engine\parser\assemblyfileparser.cpp(143): error C2039: '__this': is not a member of 'Engine::Token'
+  c:\users\luc\desktop\programming\projects\codewar\code\engine\parser\lexer.h(7): note: see declaration of 'Engine::Token'
+c:\users\luc\desktop\programming\projects\codewar\code\engine\parser\assemblyfileparser.cpp(144): error C2143: syntax error: missing ';' before '}'
