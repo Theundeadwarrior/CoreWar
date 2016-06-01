@@ -81,7 +81,7 @@ namespace Engine
 			switch (*m_CurrentChar)
 			{
 			case ' ': case '\t':
-				WhiteSpace();
+				WhiteSpace(); 
 				break;
 			case'\n': case '\r':
 			{
