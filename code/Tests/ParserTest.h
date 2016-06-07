@@ -89,7 +89,7 @@ TEST_CASE(Parser_AssemblyFile)
 	eastl::vector<Engine::Instruction> parsedInstruction;
 
 	FakeParser parser("start DAT.X #  0%4,$  1 ; test \n test MOV.AB 0,start ; blabla \n");
-	parser.AssemblyFile();
+	parser.ParseAssemblyFile();
 	parser.GetResolvedInstructions(parsedInstruction);
 
 	CHECK(parsedInstruction[0].m_Opcode == EOpCode::EOpCode_DAT);

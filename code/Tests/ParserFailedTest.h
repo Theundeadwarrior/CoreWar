@@ -9,7 +9,7 @@ TEST_CASE(Parser_Fail1)
 {
 	eastl::vector<Engine::Instruction> parsedInstruction;
 	FakeParser parser("start DAT.T #  0,$  1 ; test \n test MOV.AB 0,start ; blabla \n");
-	parser.AssemblyFile();
+	parser.ParseAssemblyFile();
 	parser.GetResolvedInstructions(parsedInstruction);
 
 

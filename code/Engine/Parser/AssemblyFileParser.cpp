@@ -24,7 +24,7 @@ namespace Engine
 	}
 	
 
-	void RedCodeParser::AssemblyFile()
+	void RedCodeParser::ParseAssemblyFile()
 	{
 		List();
 

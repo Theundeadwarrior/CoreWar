@@ -109,7 +109,7 @@ namespace Engine
 
 		void Reset(const eastl::string& text);
 
-		void AssemblyFile();
+		void ParseAssemblyFile();
 
 		void GetResolvedInstructions(eastl::vector<Engine::Instruction>& out) { out = m_ResolvedInstructions; }
 
