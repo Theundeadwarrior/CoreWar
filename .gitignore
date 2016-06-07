@@ -48,4 +48,5 @@ Temporary Items
 *.suo
 *.idb
 *.sdf
+*.VC.db
 /CodeWar.VC.VC.opendb
