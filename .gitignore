@@ -49,4 +49,10 @@ Temporary Items
 *.idb
 *.sdf
 *.VC.db
+*.pdb
+*.tlog
+*.ilk
+*.exe
+*.obj
+*.lib
 /CodeWar.VC.VC.opendb

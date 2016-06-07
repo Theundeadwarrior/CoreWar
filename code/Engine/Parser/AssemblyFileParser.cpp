@@ -141,27 +141,57 @@ namespace Engine
 		return 0;
 	}
 
+	void RedCodeParser::ResolveAssemblyInstruction(const AssemblyFileInstruction& input, Engine::Instruction& output)
+	{
+		output.m_Opcode = input.m_OpCode;
+		output.m_Modifier = input.m_Modifier;
+		output.m_AMode = input.m_Mode1;
+		output.m_BMode = input.m_Mode2;
+		output.m_Adress1 = EvaluateExpression(input.m_Expr1);
+		output.m_Adress2 = EvaluateExpression(input.m_Expr2);
+	}
+
 	void RedCodeParser::ResolveAssemblyInstructions(const eastl::vector<AssemblyFileInstruction>& input)
 	{
 		char modes[5]{ '#', '$', '@', '<', '>' };
 		char exprOp[5]{ '+', '-', '*', '/', '%' };
 
-		m_ResolvedInstructions.reserve(m_AssemblyInstructions.size());
+		m_ResolvedInstructions.resize(m_AssemblyInstructions.size());
 
-		for (unsigned int currentInstructionNumber = 0; currentInstructionNumber < input.size(); ++currentInstructionNumber)
+		for (unsigned int i = 0; i < input.size(); ++i)
 		{
-			auto i = input[currentInstructionNumber];
-			Engine::Instruction resolvedInstruction;
-			resolvedInstruction.m_Opcode = i.m_OpCode;
-			resolvedInstruction.m_Modifier = i.m_Modifier;
-			resolvedInstruction.m_AMode = i.m_Mode1;
-			resolvedInstruction.m_BMode = i.m_Mode2;
-			resolvedInstruction.m_Adress1 = EvaluateExpression(i.m_Expr1);
-			resolvedInstruction.m_Adress2 = EvaluateExpression(i.m_Expr2);
-
-			m_ResolvedInstructions.push_back(resolvedInstruction);
+			ResolveAssemblyInstruction(input[i], m_ResolvedInstructions[i]);
 		}
 	}
+
+
+	//void RedCodeParser::ParallelResolveAssemblyInstructions(const eastl::vector<AssemblyFileInstruction>& input)
+	//{
+	//	char modes[5]{ '#', '$', '@', '<', '>' };
+	//	char exprOp[5]{ '+', '-', '*', '/', '%' };
+
+	//	m_ResolvedInstructions.resize(m_AssemblyInstructions.size());
+
+	//	const unsigned int MAX_THREAD_NUMBER = 4;
+	//	unsigned int threadCount = 0;
+	//	unsigned int currentJob = 0;
+	//	unsigned int jobCount = input.size();
+
+	//	while (currentJob < jobCount)
+	//	{
+	//		if (threadCount < MAX_THREAD_NUMBER)
+	//		{
+	//			std::thread t([&, currentJob]() {
+	//				threadCount++;
+	//				ResolveAssemblyInstruction(input[currentJob], m_ResolvedInstructions[currentJob]);
+	//				threadCount--;
+	//			});
+	//			currentJob++;
+	//			t.detach();
+	//		}
+	//	}
+
+	//}
 
 	bool RedCodeParser::IsParsingDone()
 	{

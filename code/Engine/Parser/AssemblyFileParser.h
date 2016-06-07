@@ -140,7 +140,9 @@ namespace Engine
 	private:
 		bool IsParsingDone();
 		int GetLabelValueFromString(const eastl::string & str);
-		int RedCodeParser::EvaluateExpression(const eastl::string& expr);
+		static int EvaluateExpression(const eastl::string& expr);
+		void ResolveAssemblyInstruction(const AssemblyFileInstruction& input, Engine::Instruction& output);
+
 
 	private:
 		eastl::vector<AssemblyFileInstruction> m_AssemblyInstructions;
