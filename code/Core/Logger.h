@@ -10,7 +10,7 @@ namespace Core
 		ILogger() {};
 		virtual ~ILogger() = 0 {};
 		virtual void LogError(const std::string& msg) {};
-		virtual void LogWarning(const std::string& msg) {};
+		virtual void LogWarning(const std::string& msg) {}; 
 		virtual void LogMessage(const std::string& msg) {};
 	};
 
