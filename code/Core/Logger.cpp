@@ -10,17 +10,17 @@ namespace Core
 	{
 	}
 
-	void Logger::LogError(const eastl::string & msg)
+	void Logger::LogError(const std::string & msg)
 	{
 		m_Errors.push_back(msg);
 	}
 
-	void Logger::LogWarning(const eastl::string & msg)
+	void Logger::LogWarning(const std::string & msg)
 	{
 		m_Warnings.push_back(msg);
 	}
 
-	void Logger::LogMessage(const eastl::string & msg)
+	void Logger::LogMessage(const std::string & msg)
 	{
 		m_Messages.push_back(msg);
 	}

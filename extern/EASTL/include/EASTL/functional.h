@@ -952,7 +952,7 @@ namespace eastl
 	/// Defines a generic string hash for an arbitrary EASTL basic_string container.
 	///
 	/// Example usage:
-	///    eastl::hash_set<MyString, eastl::string_hash<MyString> > hashSet;
+	///    eastl::hash_set<MyString, std::string_hash<MyString> > hashSet;
 	///
 	template <typename String>
 	struct string_hash

@@ -4,7 +4,7 @@
 #pragma once
 #include <EASTL/vector.h>
 #include <EASTL/queue.h>
-#include <EASTL/string.h>
+#include <string>
 
 namespace Engine
 {
@@ -56,7 +56,7 @@ namespace Engine
 		}
 
 #ifdef UNIT_TEST
-		Instruction(const eastl::string& text)
+		Instruction(const std::string& text)
 		{
 		}
 #endif

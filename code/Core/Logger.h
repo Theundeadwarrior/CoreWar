@@ -1,5 +1,5 @@
 #pragma once
-#include <EASTL\string.h>
+#include <string>
 #include <EASTL\vector.h>
 
 namespace Core
@@ -9,9 +9,9 @@ namespace Core
 	public:
 		ILogger() {};
 		virtual ~ILogger() = 0 {};
-		virtual void LogError(const eastl::string& msg) {};
-		virtual void LogWarning(const eastl::string& msg) {};
-		virtual void LogMessage(const eastl::string& msg) {};
+		virtual void LogError(const std::string& msg) {};
+		virtual void LogWarning(const std::string& msg) {};
+		virtual void LogMessage(const std::string& msg) {};
 	};
 
 	class Logger : public ILogger
@@ -20,16 +20,16 @@ namespace Core
 		Logger();
 		virtual ~Logger();
 
-		void LogError(const eastl::string& msg) override;
-		void LogWarning(const eastl::string& msg) override;
-		void LogMessage(const eastl::string& msg) override;
+		void LogError(const std::string& msg) override;
+		void LogWarning(const std::string& msg) override;
+		void LogMessage(const std::string& msg) override;
 
 		unsigned int GetErrorCount();
 		unsigned int GetWarningCount();
 
 	private:
-		eastl::vector<eastl::string> m_Errors;
-		eastl::vector<eastl::string> m_Warnings;
-		eastl::vector<eastl::string> m_Messages;
+		eastl::vector<std::string> m_Errors;
+		eastl::vector<std::string> m_Warnings;
+		eastl::vector<std::string> m_Messages;
 	};
 }

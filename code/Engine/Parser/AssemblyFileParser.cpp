@@ -17,7 +17,7 @@ namespace Engine
 	{
 	}
 
-	void RedCodeParser::Reset(const eastl::string & text)
+	void RedCodeParser::Reset(const std::string & text)
 	{
 		m_Lexer.ResetLexer(text);
 		Consume();
@@ -97,7 +97,11 @@ namespace Engine
 		{
 			if (m_Lookahead.m_Type == Token::e_Mode)
 			{
-				if (isFirstExpression)
+				if (!g_SymbolHelper.ModeExistsFromString(m_Lookahead.m_Name))
+				{
+					kamiLogError("Invalid Mode parsed in input file.");
+				}
+				else if (isFirstExpression)
 					ins.m_Mode1 = g_SymbolHelper.GetModeFromString(m_Lookahead.m_Name);
 				else
 					ins.m_Mode2 = g_SymbolHelper.GetModeFromString(m_Lookahead.m_Name);
@@ -124,7 +128,7 @@ namespace Engine
 		m_AssemblyInstructions.push_back(ins);
 	}
 
-	int RedCodeParser::GetLabelValueFromString(const eastl::string& str)
+	int RedCodeParser::GetLabelValueFromString(const std::string& str)
 	{
 		auto it = m_LabelToInstructionNumber.find(str);
 		if (it != m_LabelToInstructionNumber.end())
@@ -136,7 +140,7 @@ namespace Engine
 		return 0;
 	}
 
-	int RedCodeParser::EvaluateExpression(const eastl::string& expr)
+	int RedCodeParser::EvaluateExpression(const std::string& expr)
 	{
 		return 0;
 	}

@@ -4,7 +4,7 @@
 
 namespace Engine
 {
-	//Lexer::Lexer(const eastl::string & str)
+	//Lexer::Lexer(const std::string & str)
 	//	: m_InputString(str)
 	//	, m_EndOfString(m_InputString.end())
 	//	, m_CurrentChar(m_InputString.begin())
@@ -20,17 +20,17 @@ namespace Engine
 	{
 	}
 
-	void Lexer::ResetLexer(const eastl::string & str)
+	void Lexer::ResetLexer(const std::string & str)
 	{
 		m_InputString = str;
-		m_EndOfString = m_InputString.end();
-		m_CurrentChar = m_InputString.begin();
+		m_EndOfString = &m_InputString.back();
+		m_CurrentChar = &m_InputString.front();
 	}
 
 	inline void Lexer::Consume()
 	{
 		m_CurrentChar++;
-		if (m_CurrentChar == m_EndOfString)
+		if (m_CurrentChar > m_EndOfString)
 			m_CurrentChar = &m_EOF;
 	}
 
@@ -42,7 +42,7 @@ namespace Engine
 
 	Token Lexer::AlphaNumeral()
 	{
-		eastl::string name = "";
+		std::string name = "";
 		while (isalnum(*m_CurrentChar))
 		{
 			name.push_back(*m_CurrentChar);
@@ -64,7 +64,7 @@ namespace Engine
 
 	Token Lexer::Number()
 	{
-		eastl::string number = "";
+		std::string number = "";
 		while (isdigit(*m_CurrentChar))
 		{
 			number.push_back(*m_CurrentChar);
@@ -109,9 +109,9 @@ namespace Engine
 			case '<':
 			case '>':
 			{
-				const char* currentChar = m_CurrentChar;
+				const char currentChar = *m_CurrentChar;
 				Consume();
-				return Token(Token::e_Mode, eastl::string(currentChar, 1));
+				return Token(Token::e_Mode, std::string(&currentChar, 1));
 			}
 
 			//case '#':
@@ -141,9 +141,9 @@ namespace Engine
 			case '*':
 			case '/':
 			{
-				const char* currentChar = m_CurrentChar;
+				const char currentChar = *m_CurrentChar;
 				Consume();
-				return Token(Token::e_ExpressionOperation, eastl::string(currentChar, 1));
+				return Token(Token::e_ExpressionOperation, std::string(&currentChar, 1));
 			}
 
 			//case '%':

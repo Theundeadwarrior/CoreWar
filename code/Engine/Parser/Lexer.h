@@ -1,5 +1,5 @@
 #pragma once
-#include <EASTL\string.h>
+#include <string>
 
 namespace Engine
 {
@@ -34,12 +34,12 @@ namespace Engine
 			e_AlphaNumeric = 100,
 		};
 
-		Token(Type type, const eastl::string name)
+		Token(Type type, const std::string name)
 			: m_Name(name)
 			, m_Type(type)
 		{}
 
-		eastl::string m_Name;
+		std::string m_Name;
 		Type m_Type;
 	};
 
@@ -47,10 +47,10 @@ namespace Engine
 	{
 	public:
 		Lexer();
-		//Lexer(const eastl::string& str);
+		//Lexer(const std::string& str);
 		~Lexer();
 
-		void ResetLexer(const eastl::string& str);
+		void ResetLexer(const std::string& str);
 
 		Token NextToken();
 
@@ -61,9 +61,9 @@ namespace Engine
 		void Consume();
 		void WhiteSpace();
 
-		eastl::string m_InputString;
-		eastl::string::const_iterator m_EndOfString;
-		eastl::string::const_iterator m_CurrentChar;
+		std::string m_InputString;
+		const char* m_EndOfString;
+		const char* m_CurrentChar;
 		char m_EOF;
 	};
 }

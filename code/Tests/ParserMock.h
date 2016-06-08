@@ -8,7 +8,7 @@ using namespace Engine;
 class FakeParser : public RedCodeParser
 {
 public:
-	FakeParser(const eastl::string& text)
+	FakeParser(const std::string& text)
 		: RedCodeParser()
 	{
 		Reset(text);

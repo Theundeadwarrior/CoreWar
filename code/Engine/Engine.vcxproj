@@ -190,6 +190,7 @@
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Parser\AssemblyFileParser.cpp" />
+    <ClCompile Include="Parser\ExpressionEvaluator.cpp" />
     <ClCompile Include="Parser\Lexer.cpp" />
     <ClCompile Include="RedCodeEngine.cpp" />
     <ClCompile Include="System\allocator_eastl.cpp" />
@@ -301,6 +302,7 @@
     <ClInclude Include="..\..\extern\EASTL\include\EASTL\version.h" />
     <ClInclude Include="..\..\extern\EASTL\include\EASTL\weak_ptr.h" />
     <ClInclude Include="Parser\AssemblyFileParser.h" />
+    <ClInclude Include="Parser\ExpressionEvaluator.h" />
     <ClInclude Include="Parser\Lexer.h" />
     <ClInclude Include="RedCodeEngine.h" />
   </ItemGroup>

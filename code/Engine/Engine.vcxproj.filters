@@ -55,6 +55,9 @@
     <ClCompile Include="Parser\AssemblyFileParser.cpp">
       <Filter>Parser</Filter>
     </ClCompile>
+    <ClCompile Include="Parser\ExpressionEvaluator.cpp">
+      <Filter>Parser</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="RedCodeEngine.h">
@@ -355,6 +358,9 @@
       <Filter>Parser</Filter>
     </ClInclude>
     <ClInclude Include="Parser\AssemblyFileParser.h">
+      <Filter>Parser</Filter>
+    </ClInclude>
+    <ClInclude Include="Parser\ExpressionEvaluator.h">
       <Filter>Parser</Filter>
     </ClInclude>
   </ItemGroup>

@@ -988,8 +988,8 @@ namespace eastl
 // Defined as 0 or 1. Default is 0 until such day that it's deemeed safe.
 // When enabled, enables operator= for other char types, e.g. for code 
 // like this:
-//     eastl::string8  s8;
-//     eastl::string16 s16;
+//     std::string8  s8;
+//     std::string16 s16;
 //     s8 = s16;
 // This option is considered experimental, and may exist as such for an
 // indefinite amount of time.

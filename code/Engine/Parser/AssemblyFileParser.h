@@ -53,34 +53,34 @@ namespace Engine
 			m_SymbolToMode[">"] = EMode::EMode_PostIndirect;
 		}
 
-		EOpCode GetOpCodeFromString(const eastl::string& string)
+		EOpCode GetOpCodeFromString(const std::string& string)
 		{
 			return m_SymbolToOpCode[string];
 		}
 
-		EModifier GetModifierFromString(const eastl::string& string)
+		EModifier GetModifierFromString(const std::string& string)
 		{
 			return m_SymbolToModifier[string];
 		}
 
-		EMode GetModeFromString(const eastl::string& string)
+		EMode GetModeFromString(const std::string& string)
 		{
 			return m_SymbolToMode[string];
 		}
 
-		bool ModeExistsFromString(const eastl::string& string)
+		bool ModeExistsFromString(const std::string& string)
 		{
 			return m_SymbolToMode.find(string) != m_SymbolToMode.end();
 		}
 		
-		bool ModifierExistsFromString(const eastl::string& string)
+		bool ModifierExistsFromString(const std::string& string)
 		{
 			return m_SymbolToModifier.find(string) != m_SymbolToModifier.end();
 		}
 
-		eastl::map<eastl::string, EOpCode> m_SymbolToOpCode;
-		eastl::map<eastl::string, EModifier> m_SymbolToModifier;
-		eastl::map<eastl::string, EMode> m_SymbolToMode;
+		eastl::map<std::string, EOpCode> m_SymbolToOpCode;
+		eastl::map<std::string, EModifier> m_SymbolToModifier;
+		eastl::map<std::string, EMode> m_SymbolToMode;
 	};
 
 	static SymbolHelper g_SymbolHelper;
@@ -92,13 +92,15 @@ namespace Engine
 			: m_Labels("")
 			, m_OpCode(EOpCode::EOpCode_Invalid)
 			, m_Modifier(EModifier::EModifier_Invalid)
+			, m_Mode1(EMode::EMode_Invalid)
+			, m_Mode2(EMode::EMode_Invalid)
 		{}
 
-		eastl::string m_Labels;
+		std::string m_Labels;
 		EOpCode m_OpCode;
 		EModifier m_Modifier;
 		EMode m_Mode1, m_Mode2;
-		eastl::string m_Expr1, m_Expr2;
+		std::string m_Expr1, m_Expr2;
 	};
 
 	class RedCodeParser
@@ -107,7 +109,7 @@ namespace Engine
 		RedCodeParser();
 		~RedCodeParser();
 
-		void Reset(const eastl::string& text);
+		void Reset(const std::string& text);
 
 		void ParseAssemblyFile();
 
@@ -139,14 +141,14 @@ namespace Engine
 
 	private:
 		bool IsParsingDone();
-		int GetLabelValueFromString(const eastl::string & str);
-		static int EvaluateExpression(const eastl::string& expr);
+		int GetLabelValueFromString(const std::string & str);
+		static int EvaluateExpression(const std::string& expr);
 		void ResolveAssemblyInstruction(const AssemblyFileInstruction& input, Engine::Instruction& output);
 
 
 	private:
 		eastl::vector<AssemblyFileInstruction> m_AssemblyInstructions;
-		eastl::map<eastl::string, unsigned int> m_LabelToInstructionNumber;
+		eastl::map<std::string, unsigned int> m_LabelToInstructionNumber;
 		eastl::vector<Engine::Instruction> m_ResolvedInstructions;
 	};
 }
