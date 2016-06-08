@@ -1,4 +1,5 @@
 #include "AssemblyFileParser.h"
+#include "ExpressionEvaluator.h"
 #include <algorithm>
 #include <cctype>
 #include <assert.h>
@@ -142,7 +143,25 @@ namespace Engine
 
 	int RedCodeParser::EvaluateExpression(const std::string& expr)
 	{
-		return 0;
+		std::string workingCopy = expr;
+		for (unsigned int i = 0; i < workingCopy.size(); ++i)
+		{
+			if (isalpha(workingCopy[i]))
+			{
+				unsigned int start = i;
+				std::string buffer = "";
+				while (isalpha(workingCopy[i]) && i < workingCopy.size())
+				{
+					buffer += workingCopy[i];
+					++i;
+				}
+				std::string value = std::to_string(GetLabelValueFromString(buffer));
+				workingCopy.replace(start, start + i, value);
+				i = start + value.length() - 1;
+			}		
+		}
+
+		return ExpressionEvaluator().EvaluateExpression(workingCopy);
 	}
 
 	void RedCodeParser::ResolveAssemblyInstruction(const AssemblyFileInstruction& input, Engine::Instruction& output)

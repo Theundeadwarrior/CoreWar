@@ -1,3 +1,5 @@
-﻿  ExpressionEvaluator.cpp
+﻿  AssemblyFileParser.cpp
+c:\users\luc\desktop\programming\projects\codewar\code\engine\parser\assemblyfileparser.cpp(160): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
+c:\users\luc\desktop\programming\projects\codewar\code\engine\parser\assemblyfileparser.cpp(164): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
 ExpressionEvaluator.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
   Engine.vcxproj -> C:\Users\Luc\Desktop\Programming\Projects\CodeWar\x64\Debug Test\Engine.lib

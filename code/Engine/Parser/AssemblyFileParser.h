@@ -142,7 +142,7 @@ namespace Engine
 	private:
 		bool IsParsingDone();
 		int GetLabelValueFromString(const std::string & str);
-		static int EvaluateExpression(const std::string& expr);
+		int EvaluateExpression(const std::string& expr);
 		void ResolveAssemblyInstruction(const AssemblyFileInstruction& input, Engine::Instruction& output);
 
 
