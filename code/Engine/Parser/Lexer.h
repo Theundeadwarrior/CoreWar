@@ -27,6 +27,10 @@ namespace Engine
 			//e_Division = 14,			// /
 			//e_Star = 15,				// *
 
+			// Added for ExpressionEvaluator
+			e_OpenParenthesis = 12,
+			e_CloseParenthesis = 13,
+
 
 			e_OpCode = 30,
 			e_OpCodeModifier = 31,

@@ -45,14 +45,24 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
-.suo
-.idb
-.sdf
-.VC.db
-.pdb
-.tlog
-.ilk
-.exe
-.obj
-.lib
+*.[Oo]bj
+*.user
+*.aps
+*.pch
+*.vspscc
+*.vssscc
+*_i.c
+*_p.c
+*.ncb
+*.suo
+*.tlb
+*.tlh
+*.bak
+*.[Cc]ache
+*.ilk
+*.log
+*.lib
+*.sbr
+*.sdf
+*.exe
 /CodeWar.VC.VC.opendb

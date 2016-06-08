@@ -1,6 +1,7 @@
 #include "CoreTests.h"
 #include "EngineTests.h"
 #include "ParserTest.h"
+#include "ExpressionEvaluatorTest.h"
 #include "ParserFailedTest.h"
 #include "UnitTestsFramework.h"
 #include "Logger.h"

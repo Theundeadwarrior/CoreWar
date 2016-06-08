@@ -100,6 +100,7 @@
   <ItemGroup>
     <ClInclude Include="CoreTests.h" />
     <ClInclude Include="EngineTests.h" />
+    <ClInclude Include="ExpressionEvaluatorTest.h" />
     <ClInclude Include="ParserFailedTest.h" />
     <ClInclude Include="ParserMock.h" />
     <ClInclude Include="ParserTest.h" />

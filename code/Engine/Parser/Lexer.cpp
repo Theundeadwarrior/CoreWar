@@ -146,6 +146,17 @@ namespace Engine
 				return Token(Token::e_ExpressionOperation, std::string(&currentChar, 1));
 			}
 
+			case '(':
+			{
+				Consume();
+				return Token(Token::e_OpenParenthesis, std::string("("));
+			}
+			case ')':
+			{
+				Consume();
+				return Token(Token::e_CloseParenthesis, std::string(")"));
+			}
+
 			//case '%':
 			//	Consume();
 			//	return Token(Token::e_Percent, "%");
